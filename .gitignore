@@ -1,0 +1,10 @@
+#directories
+node_modules
+build
+
+# files
+package-lock.json
+
+# vscode
+.vscode
+jsconfig.json
