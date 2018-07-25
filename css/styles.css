@@ -1,0 +1,169 @@
+/*     ****************************   common styles   ****************************************** */
+
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  background: #eeeeee;
+  height: 100%;
+}
+
+.invisible {
+  display: none !important;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border: solid darkgray 2px;
+}
+
+#app {
+  width: 720px;
+  background: white;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.full-height {
+  height: 100% !important;
+}
+
+.transparent {
+  background: transparent !important;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.btn {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  border-radius: 5px;
+  max-height: 30px;
+  max-width: 60px;
+}
+
+/*     ****************************   formStyles   ********************************************* */
+.formContainer {
+  padding: 1rem;
+  background: #eeeeee;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.formContainer .right-section {
+  margin-left: 10px;
+  flex: 1 1 auto;
+}
+
+.formContainer img {
+  align-self: flex-start;
+}
+
+.formContainer input {
+  width: 100%;
+  min-height: 100%;
+}
+
+.formContainer input::placeholder {
+  color: darkgray;
+  background: white;
+}
+
+.formContainer .footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.formContainer .cancel {
+  margin-right: 10px;
+}
+/*     ******************************* comments box *********************** */
+
+.comment-container {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0px 0px 2px darkgrey;
+  margin: 2px 0px;
+}
+
+.comment-container .content {
+  flex: 1 1 auto;
+  margin-left: 10px;
+}
+
+.comment-container .profile-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: olivedrab;
+}
+
+.comment-container .reaction-box {
+  display: flex;
+}
+
+.comment-container .footer {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.reaction-box .likes-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+
+.reaction-box .dislikes-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-left: 1px solid #eeeeee;
+}
+
+.reaction-box img {
+  width: 20px;
+  height: 20px;
+  border: solid 2px transparent;
+  margin-right: 5px;
+}
+
+.comment-container .toggle-reply {
+  margin-left: 5px;
+  padding: 5px;
+  border-left: solid 1px darkgray;
+}
+
+.comment-container .toggle-reply:active {
+  color: darkgray;
+}
+
+.reaction-box img:active {
+  border: solid 2px darkgray;
+}
+
+.comment-container .reply-box-container {
+  transition: max-height 0.5s ease-out;
+  max-height: 140px;
+  overflow: hidden;
+}
+
+.comment-container .collapsed {
+  max-height: 0px;
+}
